@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Platform Documentation</title>
+    <meta name="description" content="Comprehensive documentation for the Aurora Platform - your complete solution for modern application development">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-rocket"></i>
+                <span>Aurora Platform</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#getting-started" class="nav-link">Getting Started</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#api" class="nav-link">API Reference</a>
+                <a href="#guides" class="nav-link">Guides</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Aurora Platform</h1>
+                <p class="hero-subtitle">Build, deploy, and scale modern applications with our comprehensive platform. From development to production, we've got you covered.</p>
+                <div class="hero-actions">
+                    <a href="#getting-started" class="btn btn-primary">Get Started</a>
+                    <a href="#features" class="btn btn-secondary">Explore Features</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <span class="code-title">terminal</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line">
+                            <span class="prompt">$</span>
+                            <span class="command">aurora init my-app</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="prompt">$</span>
+                            <span class="command">aurora deploy --prod</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="output">✓ Successfully deployed to production</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h3>Documentation</h3>
+                </div>
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li><a href="#overview" class="sidebar-link active">Overview</a></li>
+                        <li><a href="#getting-started" class="sidebar-link">Getting Started</a></li>
+                        <li><a href="#installation" class="sidebar-link">Installation</a></li>
+                        <li><a href="#configuration" class="sidebar-link">Configuration</a></li>
+                        <li><a href="#features" class="sidebar-link">Features</a></li>
+                        <li><a href="#api-reference" class="sidebar-link">API Reference</a></li>
+                        <li><a href="#tutorials" class="sidebar-link">Tutorials</a></li>
+                        <li><a href="#troubleshooting" class="sidebar-link">Troubleshooting</a></li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- Content Area -->
+            <div class="content">
+                <!-- Overview Section -->
+                <section id="overview" class="content-section">
+                    <h1>Platform Overview</h1>
+                    <p class="lead">Aurora Platform is a comprehensive solution designed to streamline your development workflow from initial setup to production deployment.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>Fast Deployment</h3>
+                            <p>Deploy your applications in minutes with our automated CI/CD pipeline and zero-downtime deployments.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Enterprise Security</h3>
+                            <p>Built-in security features including SSL certificates, DDoS protection, and compliance standards.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Real-time Analytics</h3>
+                            <p>Monitor your application's performance with detailed analytics and customizable dashboards.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Team Collaboration</h3>
+                            <p>Work seamlessly with your team using role-based access control and collaborative features.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Getting Started Section -->
+                <section id="getting-started" class="content-section">
+                    <h1>Getting Started</h1>
+                    <p>Get up and running with Aurora Platform in just a few simple steps.</p>
+                    
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Create an Account</h3>
+                                <p>Sign up for a free Aurora Platform account to get started. No credit card required.</p>
+                                <a href="#" class="step-link">Sign Up Now →</a>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Install CLI</h3>
+                                <p>Install our command-line interface to manage your projects from your terminal.</p>
+                                <div class="code-block">
+                                    <code>npm install -g @aurora/cli</code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Initialize Project</h3>
+                                <p>Create your first project using our interactive setup wizard.</p>
+                                <div class="code-block">
+                                    <code>aurora init my-awesome-app</code>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Deploy to Production</h3>
+                                <p>Deploy your application with a single command and see it live in minutes.</p>
+                                <div class="code-block">
+                                    <code>aurora deploy --prod</code>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Features Section -->
+                <section id="features" class="content-section">
+                    <h1>Core Features</h1>
+                    
+                    <div class="feature-detail">
+                        <h2>Auto-scaling Infrastructure</h2>
+                        <p>Our platform automatically scales your applications based on traffic and resource usage. No manual intervention required - your app handles traffic spikes seamlessly.</p>
+                        
+                        <h3>Key Benefits:</h3>
+                        <ul>
+                            <li>Automatic horizontal scaling</li>
+                            <li>Load balancing across multiple regions</li>
+                            <li>Cost optimization with usage-based pricing</li>
+                            <li>99.9% uptime guarantee</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-detail">
+                        <h2>Built-in Database Management</h2>
+                        <p>Integrated database solutions with automatic backups, scaling, and performance optimization. Support for PostgreSQL, MySQL, and MongoDB.</p>
+                        
+                        <h3>Database Features:</h3>
+                        <ul>
+                            <li>Point-in-time recovery</li>
+                            <li>Automated security patches</li>
+                            <li>Read replicas for performance</li>
+                            <li>Connection pooling</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-detail">
+                        <h2>Developer Experience</h2>
+                        <p>Built by developers, for developers. Our platform prioritizes developer experience with intuitive tools and workflows.</p>
+                        
+                        <h3>Developer Tools:</h3>
+                        <ul>
+                            <li>Hot reload for instant feedback</li>
+                            <li>Integrated debugging tools</li>
+                            <li>Git-based deployments</li>
+                            <li>Comprehensive API documentation</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- FAQ Section -->
+                <section id="faq" class="content-section">
+                    <h1>Frequently Asked Questions</h1>
+                    
+                    <div class="faq-container">
+                        <div class="faq-item">
+                            <h3 class="faq-question">What programming languages are supported?</h3>
+                            <div class="faq-answer">
+                                <p>We support Node.js, Python, Ruby, Go, Java, and .NET. You can also deploy Docker containers for any other language or framework.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">How does pricing work?</h3>
+                            <div class="faq-answer">
+                                <p>We offer a generous free tier for development and small projects. Paid plans start at $5/month and scale based on usage. You only pay for what you use.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">Can I use my own domain?</h3>
+                            <div class="faq-answer">
+                                <p>Yes! You can easily connect your custom domain with our built-in SSL certificate management. We support both root domains and subdomains.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3 class="faq-question">Is there a limit on requests or bandwidth?</h3>
+                            <div class="faq-answer">
+                                <p>Free tier includes 100GB bandwidth and 100k requests per month. Paid plans offer unlimited bandwidth and requests with fair usage policies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Aurora Platform</h4>
+                    <p>Building the future of application deployment and management.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#documentation">Documentation</a></li>
+                        <li><a href="#api">API Reference</a></li>
+                        <li><a href="#tutorials">Tutorials</a></li>
+                        <li><a href="#examples">Examples</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#discord">Discord</a></li>
+                        <li><a href="#github">GitHub</a></li>
+                        <li><a href="#twitter">Twitter</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#status">Status</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aurora Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
